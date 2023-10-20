@@ -1,46 +1,97 @@
-<section>
-	<p>
-		Ik ben Tim Oosterver, een gepassioneerde student frontend developer die gedreven is om
-		verbluffende digitale projecten te creëren. Mijn focus ligt op het omzetten van concepten in
-		esthetisch aantrekkelijke en functionele websites en applicaties. Mijn werk weerspiegelt mijn
-		toewijding aan innovatie en mijn liefde voor het vak.
-	</p>
+<script>
+	import { gsap } from 'gsap-trial';
+	import { onMount } from 'svelte';
 
-	<div class="intro">
-		<img src="tim.jpeg" alt="" />
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		gsap.from('.last-projects', {
+			scrollTrigger: {
+				trigger: '.section-about',
+				start: 'top',
+				end: 'bottom',
+				scrub: 'true'
+			},
+			y: 300
+		});
+
+		gsap.from('.second-project', {
+			scrollTrigger: {
+				trigger: '.section-about',
+				start: '200',
+				end: 'bottom',
+				scrub: 'true',
+				markers: true
+			},
+			y: 500
+		});
+	});
+</script>
+
+<section class="projects">
+	<div class="title-project">
+		<h2>LAST PROJECTS</h2>
+	</div>
+
+	<div class="last-projects">
+		<div class="first-project">
+			<img src="plantswap.png" alt="" />
+			<p>
+				"Website voor buurtcampus oost, op de website kun je zien welke stekjes er beschikbaar zijn
+				om te ruilen"
+			</p>
+		</div>
+
+		<div class="second-project">
+			<img src="squadpage.png" alt="" />
+			<p>"Op de squadpage kun je zien wie er allemaal in onze squad zit"</p>
+		</div>
 	</div>
 </section>
 
 <style>
 	section {
 		position: sticky;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		background-color: #250902;
-		color: #fff;
+		background-color: #f0eff4;
+		color: #1a535c;
 		border-radius: 10px;
+		width: 100%;
 		height: 90vh;
-		margin: 0 auto;
 		padding: var(--padding);
-		margin-bottom: 2rem;
+		overflow: hidden;
 	}
 
-	p {
-		font-size: 24px;
+	h2 {
 		font-weight: 200;
-		width: 45vw;
 	}
 
-	.intro {
+	.last-projects {
+		display: flex;
+		gap: 2rem;
+		width: 100%;
 		height: 100%;
-		width: 30%;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		font-weight: 200;
 	}
 
-	img {
+	.first-project,
+	.second-project {
+		width: 50%;
+		height: 65%;
+	}
+
+	.first-project img,
+	.second-project img {
+		object-fit: cover;
+		object-position: top;
 		width: 100%;
 		height: 100%;
 		border-radius: 10px;
-		object-fit: cover;
+	}
+
+	.second-project {
+		margin-top: 5rem;
 	}
 </style>

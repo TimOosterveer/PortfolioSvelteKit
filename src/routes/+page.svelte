@@ -17,10 +17,10 @@
 
 	:global(:root) {
 		--background-color: #242424;
-    --background-color-light: #2d6ed09a;
+		--background-color-light: #2d6ed09a;
 		--text-color-h1: #f5b19c;
 		--text-color-dark: #1a202c;
-		--text-color-light: #fff;
+		--text-color-light: #f0eff4;
 
 		--padding: 2rem;
 	}

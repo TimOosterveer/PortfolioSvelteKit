@@ -13,7 +13,7 @@
 
 		gsap.from(chars, {
 			yPercent: 90,
-			stagger: 0.1,
+			stagger: 0.04,
 			ease: "back.out",
 			duration: 1
 		});
@@ -23,7 +23,7 @@
 <section>
 	<div class="info-me">
 		<h1>TIM OOSTERVEER</h1>
-		<p class="p">Student Frontend developer</p>
+		<p class="p">Student Frontend Developer</p>
 	</div>
 </section>
 

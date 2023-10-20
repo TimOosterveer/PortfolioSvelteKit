@@ -1,5 +1,37 @@
-<section>
-	<p>
+<script>
+	import { gsap } from 'gsap';
+	import { onMount } from 'svelte';
+
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import { backIn, backOut } from 'svelte/easing';
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		gsap.from('.about-me', {
+			scrollTrigger: {
+				trigger: '.info-me',
+				start: '-100px',
+				end: '400px',
+				scrub: 'true',
+			},
+			y: 200,
+		});
+
+		gsap.from('.intro', {
+			scrollTrigger: {
+				trigger: '.info-me',
+				start: '-100px',
+				end: '400px',
+				scrub: 'true',
+			},
+			y: 300,
+		});
+
+	});
+</script>
+
+<section class="section-about">
+	<p class="about-me">
 		"Ik ben Tim Oosterver, een gepassioneerde student frontend developer die gedreven is om
 		verbluffende digitale projecten te creëren. Mijn focus ligt op het omzetten van concepten in
 		esthetisch aantrekkelijke en functionele websites en applicaties. Mijn werk weerspiegelt mijn
@@ -7,18 +39,19 @@
 	</p>
 
 	<div class="intro">
-		<img src="tim.jpeg" alt="" />
+		<img src="timmiepf.jpeg" alt="" />
 	</div>
 </section>
 
 <style>
 	section {
 		position: sticky;
-		top: 1rem;
+		top: 3rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		background-color: #1a535c;
+		color: var(--text-color-light);
 		border-radius: 10px;
 		height: 90vh;
 		padding: var(--padding);
@@ -28,6 +61,7 @@
 		font-size: 24px;
 		font-weight: 200;
 		width: 45vw;
+		overflow-y: hidden;
 	}
 
 	.intro {
