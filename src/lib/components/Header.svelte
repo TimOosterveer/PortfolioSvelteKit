@@ -55,7 +55,7 @@
 		color: var(--text-color-dark);
 		top: 0;
 		left: 0;
-		width: 20rem;
+		width: 22rem;
 		height: 4rem;
 		padding: 1rem;
 		border-radius: 0 0 10px 0;
@@ -86,7 +86,7 @@
 		border-radius: 0 0 10px 0;
 		color: var(--text-color-dark);
 		position: absolute;
-		width: 20rem;
+		width: 22rem;
 		height: 22rem;
 		padding: var(--padding);
 	}
@@ -140,11 +140,13 @@
   @media screen and (max-width: 767px) { 
 
     header {
-      width: 15rem;
+      width: 100%;
+			border-radius: 0 0 10px 10px;
     }
     nav {
       height: 15rem;
-      width: 15rem;
+			border-radius: 0 0 10px 10px;
+      width: 100%;
     }
   }
 </style>
