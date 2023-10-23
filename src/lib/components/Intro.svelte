@@ -1,23 +1,6 @@
 <script>
 	import { gsap } from 'gsap-trial';
 	import { onMount } from 'svelte';
-
-	/* The following plugin is a Club GSAP perk */
-	// import { SplitText } from 'gsap-trial/dist/SplitText';
-
-	// gsap.registerPlugin(SplitText);
-
-	// onMount(() => {
-	// 	let mySplitText = new SplitText('h1', { type: 'chars' });
-	// 	let chars = mySplitText.chars;
-
-	// 	gsap.from(chars, {
-	// 		yPercent: 90,
-	// 		stagger: 0.04,
-	// 		ease: "back.out",
-	// 		duration: 1
-	// 	});
-	// });
 </script>
 
 <section>
