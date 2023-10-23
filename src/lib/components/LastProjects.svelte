@@ -1,5 +1,5 @@
 <script>
-	import { gsap } from 'gsap-trial';
+	import { gsap } from 'gsap';
 	import { onMount } from 'svelte';
 
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';

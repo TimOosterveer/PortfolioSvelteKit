@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte';
 
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-	import { backIn, backOut } from 'svelte/easing';
 	gsap.registerPlugin(ScrollTrigger);
 
 	onMount(() => {
