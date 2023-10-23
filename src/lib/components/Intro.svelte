@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 
 	/* The following plugin is a Club GSAP perk */
-	import { SplitText } from 'gsap-trial/dist/SplitText';
+	// import { SplitText } from 'gsap-trial/dist/SplitText';
 
 	// gsap.registerPlugin(SplitText);
 
