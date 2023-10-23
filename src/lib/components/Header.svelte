@@ -13,7 +13,7 @@
 	<div class="menu">
 		<p>Oosterveer</p>
 
-		<button on:click={toggleNav}>
+		<button aria-label="menu" on:click={toggleNav}>
 			{#if iconBarsVisible}
 				<i class="fa-solid fa-bars fa-2xl" style="color: #1a202c;" />
 			{:else}
@@ -26,22 +26,26 @@
 {#if navVisible}
 	<nav id="toggle" class="nav-visible" transition:fly>
 		<ul id="links">
-			<li><a href="#last-projects">Last Projects</a></li>
-			<li><a href="#all-projects">All Projects</a></li>
-			<li><a href="#footer">Contact</a></li>
+			<li><a aria-label="link recente projecten" href="#last-projects">Last Projects</a></li>
+			<li><a aria-label="link meer projecten" href="#all-projects">All Projects</a></li>
+			<li><a aria-label="link contact overzicht" href="#footer">Contact</a></li>
 		</ul>
 
 		<ul id="socials">
 			<li>
-				<a target="_blank" href="https://www.linkedin.com/in/tim-oosterveer-a33522124/">
+				<a
+					target="_blank"
+					aria-label="link naar linkedin"
+					href="https://www.linkedin.com/in/tim-oosterveer-a33522124/"
+				>
 					<i class="fa-brands fa-linkedin fa-2xl" style="color: #1a202c;" />
 				</a>
 			</li>
-      <li>
-        <a target="_blank" href="https://github.com/TimOosterveer">
-          <i class="fa-brands fa-github fa-2xl" style="color: #1a202c;" />
-        </a>
-      </li>
+			<li>
+				<a aria-label="link naar github" target="_blank" href="https://github.com/TimOosterveer">
+					<i class="fa-brands fa-github fa-2xl" style="color: #1a202c;" />
+				</a>
+			</li>
 		</ul>
 	</nav>
 {:else}
@@ -104,12 +108,12 @@
 
 	li {
 		padding-top: 1rem;
-    transition-duration: 0.2s;
+		transition-duration: 0.2s;
 	}
 
-  li:hover {
-    transform: translateX(3px);
-  }
+	li:hover {
+		transform: translateX(3px);
+	}
 
 	a {
 		text-decoration: none;
@@ -136,17 +140,15 @@
 		transform: translateY(-100%);
 	}
 
-
-  @media screen and (max-width: 767px) { 
-
-    header {
-      width: 100%;
+	@media screen and (max-width: 767px) {
+		header {
+			width: 100%;
 			border-radius: 0 0 10px 10px;
-    }
-    nav {
-      height: 15rem;
+		}
+		nav {
+			height: 15rem;
 			border-radius: 0 0 10px 10px;
-      width: 100%;
-    }
-  }
+			width: 100%;
+		}
+	}
 </style>

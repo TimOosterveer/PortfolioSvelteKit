@@ -36,7 +36,7 @@
 	<div class="last-projects">
 		<div class="first-project">
 			<a target="_blank" href="https://buurtcampus-oost-kappa.vercel.app/">
-				<img src="plantswap.png" alt="" />
+				<img src="plantswap.jpeg" alt="" />
 			</a>
 			<p>
 				"Website voor buurtcampus oost, op de website kun je zien welke stekjes er beschikbaar zijn

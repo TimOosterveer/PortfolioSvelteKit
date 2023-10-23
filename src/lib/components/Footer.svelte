@@ -5,17 +5,17 @@
 		<div class="socials">
 			<ul>
 				<li>
-					<a target="_blank" href="https://www.linkedin.com/in/tim-oosterveer-a33522124/">
+					<a aria-label="link naar linkedin" target="_blank" href="https://www.linkedin.com/in/tim-oosterveer-a33522124/">
 						<i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;" />
 					</a>
 				</li>
 				<li>
-					<a target="_blank" href="https://github.com/TimOosterveer">
+					<a aria-label="link naar github " target="_blank" href="https://github.com/TimOosterveer">
 						<i class="fa-brands fa-github fa-2xl" style="color: #ffffff;" />
 					</a>
 				</li>
 				<li>
-					<a href="mailto:timoosterveer99@gmail.com">
+					<a aria-label="link naar mail" href="mailto:timoosterveer99@gmail.com">
 						<i class="fa-regular fa-envelope fa-2xl" style="color: #ffffff;" />
 					</a>
 				</li>
