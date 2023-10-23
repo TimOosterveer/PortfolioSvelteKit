@@ -1,12 +1,14 @@
 <script>
 	import Intro from '../lib/components/Intro.svelte';
 	import IntroTekst from '../lib/components/IntroTekst.svelte';
-	import UsedTools from '../lib/components/UsedTools.svelte';
+	import LastProjects from '../lib/components/LastProjects.svelte';
+	import AllProjects from '../lib/components/AllProjects.svelte';
 </script>
 
 <Intro />
 <IntroTekst />
-<UsedTools />
+<LastProjects />
+<AllProjects />
 
 <style>
 	:global(*) {

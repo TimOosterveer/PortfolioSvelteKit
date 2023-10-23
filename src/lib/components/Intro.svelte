@@ -5,19 +5,19 @@
 	/* The following plugin is a Club GSAP perk */
 	import { SplitText } from 'gsap-trial/dist/SplitText';
 
-	gsap.registerPlugin(SplitText);
+	// gsap.registerPlugin(SplitText);
 
-	onMount(() => {
-		let mySplitText = new SplitText('h1', { type: 'chars' });
-		let chars = mySplitText.chars;
+	// onMount(() => {
+	// 	let mySplitText = new SplitText('h1', { type: 'chars' });
+	// 	let chars = mySplitText.chars;
 
-		gsap.from(chars, {
-			yPercent: 90,
-			stagger: 0.04,
-			ease: "back.out",
-			duration: 1
-		});
-	});
+	// 	gsap.from(chars, {
+	// 		yPercent: 90,
+	// 		stagger: 0.04,
+	// 		ease: "back.out",
+	// 		duration: 1
+	// 	});
+	// });
 </script>
 
 <section>
@@ -39,7 +39,6 @@
 	
 	h1 {
 		overflow: hidden;
-		color: var(--text-color-h1);
 		font-size: 8rem;
 		font-weight: 400;
 		height: 22vh;
