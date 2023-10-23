@@ -120,5 +120,9 @@
 			object-fit: cover;
 			object-position: left;
 	}
+
+	.second-project {
+		margin-top: 0;
+	}
 	}
 </style>

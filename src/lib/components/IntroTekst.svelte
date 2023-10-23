@@ -11,9 +11,9 @@
 				trigger: '.info-me',
 				start: '-100px',
 				end: '400px',
-				scrub: 'true',
+				scrub: 'true'
 			},
-			y: 200,
+			y: 200
 		});
 
 		gsap.from('.intro', {
@@ -21,20 +21,19 @@
 				trigger: '.info-me',
 				start: '-100px',
 				end: '400px',
-				scrub: 'true',
+				scrub: 'true'
 			},
-			y: 300,
+			y: 300
 		});
-
 	});
 </script>
 
 <section class="section-about">
 	<p class="about-me">
-		"Ik ben Tim Oosterver, een gepassioneerde student frontend developer die gedreven is om
-		verbluffende digitale projecten te creëren. Mijn focus ligt op het omzetten van concepten in
-		esthetisch aantrekkelijke en functionele websites en applicaties. Mijn werk weerspiegelt mijn
-		toewijding aan innovatie en mijn liefde voor het vak."
+		"Ik ben Tim Oosterver, een enthousiaste student frontend developer die vol passie te werk gaat
+		om geweldige digitale projecten te maken. Ik ben vooral bezig met het omtoveren van ideeën in
+		prachtige en bruikbare websites en apps. Mijn projecten laten zien hoe toegewijd ik ben aan
+		vernieuwing en hoeveel ik van dit vak houd."
 	</p>
 
 	<div class="intro">
@@ -77,7 +76,6 @@
 	}
 
 	@media screen and (max-width: 767px) {
-
 		section {
 			display: flex;
 			flex-direction: column;
@@ -96,6 +94,5 @@
 		img {
 			display: none;
 		}
-
 	}
 </style>

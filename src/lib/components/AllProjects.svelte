@@ -5,9 +5,9 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	gsap.registerPlugin(ScrollTrigger);
 
-  onMount(() => { 
+	onMount(() => {
 		gsap.from('.wrapper-project1', {
-			scrollTrigger:  {
+			scrollTrigger: {
 				trigger: '.first-project',
 				start: 'top 100',
 				end: 'bottom',
@@ -16,8 +16,8 @@
 			x: -1500
 		});
 
-    gsap.from('.wrapper-project2', {
-			scrollTrigger:  {
+		gsap.from('.wrapper-project2', {
+			scrollTrigger: {
 				trigger: '.wrapper-project1',
 				start: 'top 200',
 				end: 'bottom',
@@ -25,8 +25,7 @@
 			},
 			x: 1500
 		});
-  });
-
+	});
 </script>
 
 <section id="all-projects">
@@ -36,8 +35,8 @@
 			<div class="text-about">
 				<h3>Abeen Projecten</h3>
 				<p>
-					Voor Abeen ben ik een website aan het maken voor de projecten die zij maken, dit is
-					gekoppeld aan een cms.
+					"Ik ben bezig met het ontwikkelen van een website voor Abeen om hun projecten te
+					presenteren, en deze website is geïntegreerd met een Content Management Systeem."
 				</p>
 			</div>
 
@@ -52,8 +51,8 @@
 			<div class="text-about">
 				<h3>Sportiek Reizen</h3>
 				<p>
-					Voor Sportiek Reizen heb ik een dashboard gemaakt waarin je beschikbaarheid van de
-					accommodaties kan zien.
+					"Ik heb een dashboard ontwikkeld voor Sportiek Reizen, waarmee je de beschikbaarheid van
+					accommodaties kunt bekijken."
 				</p>
 			</div>
 
@@ -97,7 +96,7 @@
 	}
 
 	.wrapper-project1,
-  .wrapper-project2 {
+	.wrapper-project2 {
 		display: flex;
 		gap: 2rem;
 		width: 80vw;
@@ -131,7 +130,6 @@
 		object-fit: cover;
 		object-position: top;
 	}
-
 
 	@media screen and (max-width: 767px) {
 		.text-about {
