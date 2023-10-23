@@ -28,7 +28,7 @@
 	});
 </script>
 
-<section class="projects">
+<section class="projects" id="last-projects">
 	<div class="title-project">
 		<h2>LAST PROJECTS</h2>
 	</div>

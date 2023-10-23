@@ -1,5 +1,5 @@
 <footer>
-	<div class="container-footer">
+	<div class="container-footer" id="footer">
 		<h2>CONTACT ME</h2>
 
 		<div class="socials">

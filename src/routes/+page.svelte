@@ -1,4 +1,5 @@
 <script>
+	import Header from '../lib/components/Header.svelte'
 	import Intro from '../lib/components/Intro.svelte';
 	import IntroTekst from '../lib/components/IntroTekst.svelte';
 	import LastProjects from '../lib/components/LastProjects.svelte';
@@ -12,6 +13,7 @@
 
 </script>
 
+<Header/>
 <Intro />
 <IntroTekst />
 <LastProjects />
