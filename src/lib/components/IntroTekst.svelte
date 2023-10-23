@@ -55,6 +55,7 @@
 		border-radius: 10px;
 		height: 90vh;
 		padding: var(--padding);
+		overflow: hidden;
 	}
 
 	p {
@@ -74,5 +75,28 @@
 		height: 100%;
 		border-radius: 10px;
 		object-fit: cover;
+	}
+
+	@media screen and (max-width: 767px) {
+
+		section {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		p {
+			width: 100%;
+		}
+
+		.intro {
+			width: 100%;
+			height: 100%;
+		}
+
+		img {
+			display: none;
+		}
+
 	}
 </style>

@@ -3,12 +3,14 @@
 	import IntroTekst from '../lib/components/IntroTekst.svelte';
 	import LastProjects from '../lib/components/LastProjects.svelte';
 	import AllProjects from '../lib/components/AllProjects.svelte';
+	import Footer from '../lib/components/Footer.svelte';
 </script>
 
 <Intro />
 <IntroTekst />
 <LastProjects />
 <AllProjects />
+<Footer />
 
 <style>
 	:global(*) {

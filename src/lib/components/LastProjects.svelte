@@ -98,4 +98,27 @@
 	.second-project {
 		margin-top: 5rem;
 	}
+
+
+
+	@media screen and (max-width: 767px) {
+
+		section {
+			height: 100%;
+		}
+		.last-projects {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		.first-project, .second-project {
+			width: 100%;
+		}
+
+		.first-project img, .second-project img{
+			object-fit: cover;
+			object-position: left;
+	}
+	}
 </style>

@@ -72,7 +72,7 @@
 		width: 100%;
 		height: 100%;
 		background-color: var(--background-color);
-		border-radius: 10px;
+		border-radius: 10px 10px 0 0;
 		padding: var(--padding);
 		overflow: hidden;
 	}
@@ -130,5 +130,23 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: top;
+	}
+
+
+	@media screen and (max-width: 767px) {
+		.text-about {
+			width: 100%;
+		}
+
+		.wrapper-project1,
+		.wrapper-project2 {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+
+		p {
+			width: 100%;
+		}
 	}
 </style>
