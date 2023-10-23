@@ -4,6 +4,12 @@
 	import LastProjects from '../lib/components/LastProjects.svelte';
 	import AllProjects from '../lib/components/AllProjects.svelte';
 	import Footer from '../lib/components/Footer.svelte';
+
+
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	gsap.registerPlugin(ScrollTrigger);
+
 </script>
 
 <Intro />
