@@ -30,10 +30,10 @@
 
 <section class="section-about">
 	<p class="about-me">
-		"Ik ben Tim Oosterver, een enthousiaste student frontend developer die vol passie te werk gaat
+		"Ik ben Tim Oosterver, een enthousiaste student frontend development die vol passie te werk gaat
 		om geweldige digitale projecten te maken. Ik ben vooral bezig met het omtoveren van ideeën in
-		prachtige en bruikbare websites en apps. Mijn projecten laten zien hoe toegewijd ik ben aan
-		vernieuwing en hoeveel ik van dit vak houd."
+		prachtige en bruikbare websites. Ik leer bij elk project weer nieuwe dingen en hou van de
+		uitdagingen die erbij komen kijken."
 	</p>
 
 	<div class="intro">
