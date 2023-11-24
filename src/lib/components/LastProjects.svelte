@@ -89,7 +89,7 @@
 	.first-project img,
 	.second-project img {
 		object-fit: cover;
-		object-position: top;
+		object-position: top left;
 		width: 100%;
 		height: 100%;
 		border-radius: 10px;
